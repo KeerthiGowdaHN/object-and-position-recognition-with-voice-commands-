@@ -69,3 +69,38 @@ To run the script, follow these steps:
 
 ---
 
+
+
+The output of the code involves both visual and audio components:
+
+### Visual Output
+1. **Webcam Feed Window**:
+   - A window titled "Output" displays the real-time video feed from the webcam.
+   - Detected objects are highlighted with green bounding boxes.
+   - The name of each detected object and its confidence score are displayed on the video feed, near the bounding box.
+
+### Audio Output
+1. **Welcome Message**:
+   - When the script starts, a voice message is played: 
+     ```
+     "Welcome! We are excited to introduce our new device designed to provide enhanced path guidance and support, making navigation easier and more accessible for everyone. Your journey towards greater independence starts here!"
+     ```
+
+2. **Object Detection Feedback**:
+   - As objects are detected, the TTS engine provides real-time audio feedback. For example:
+     ```
+     "Person on the center"
+     "Car on the left"
+     ```
+
+3. **Termination Message**:
+   - When the script ends (after pressing 'q'), a final voice message is played:
+     ```
+     "Thank you for using our device! We hope it has made your navigation experience smoother and more accessible. Have a great day, and we look forward to supporting you again soon!"
+     ```
+
+### Example Scenario
+- When a person appears in the center of the frame, the script will display a bounding box around the person and the text "PERSON" with the confidence score. Simultaneously, the TTS engine will announce "Person on the center."
+- If a car is detected on the left side of the frame, it will be highlighted, and the TTS engine will say "Car on the left."
+
+This real-time feedback helps users understand their environment and the position of objects, especially useful for visually impaired individuals.
